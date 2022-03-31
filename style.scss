@@ -52,7 +52,7 @@ main {
         border-bottom         : solid 2.5rem $cinza;
         border-right          : solid 2.5rem $cinza;
         border-left           : solid 1.5rem $cinza;
-        border-top            : solid .5rem $cinza;
+        border-top            : solid 0.5rem $cinza;
         background-color      : $azul-normal;
         border-top-left-radius: 100%;
 
@@ -66,7 +66,7 @@ main {
         border-bottom          : solid 2.5rem $cinza;
         border-right           : solid 1.5rem $cinza;
         border-left            : solid 2.5rem $cinza;
-        border-top             : solid 1.5rem $cinza;
+        border-top             : solid 0.5rem $cinza;
         background-color       : $vermelho-normal;
         border-top-right-radius: 100%;
 
@@ -105,11 +105,11 @@ main {
         padding         : 2rem;
         border-radius   : 100%;
         background-color: #b3b3b3;
-        width           : $tamanho-lentes;
+        width           : $tamanho-lentes+5;
         height          : $tamanho-lentes;
         position        : absolute;
         top             : ($tamanho-jogo/4);
-        left            : (($tamanho-jogo+20)/4);
+        left            : (($tamanho-jogo+20)/4)-2.5;
         border          : 1rem solid $cinza;
         display         : flex;
         justify-content : space-around;
@@ -127,7 +127,7 @@ main {
                 font-weight: bold;
                 font-size  : 1.8rem;
                 line-height: 2rem;
-                margin     : 1rem;
+                margin     : .4rem;
                 color      : $cinza;
             }
         }
@@ -150,12 +150,16 @@ main {
             height          : 3rem;
             width           : 4rem;
             text-align      : center;
-            color           : $centro;
+            color           : #500305;
             line-height     : 3rem;
             font-size       : 1.8rem;
             background-color: $cor-contador;
-            border-radius: 15%;
-            border: #a52a2a solid .3rem;
+            border-radius   : 15%;
+            border          : #a52a2a solid .3rem;
+        }
+
+        .genius__contador--on {
+            color: $luz-vermelha;
         }
     }
 }

@@ -55,7 +55,7 @@ main .genius__lentes--vermelho {
   border-bottom: solid 2.5rem #404040;
   border-right: solid 1.5rem #404040;
   border-left: solid 2.5rem #404040;
-  border-top: solid 1.5rem #404040;
+  border-top: solid 0.5rem #404040;
   background-color: #440104;
   border-top-right-radius: 100%;
 }
@@ -94,11 +94,11 @@ main .genius__controles {
   padding: 2rem;
   border-radius: 100%;
   background-color: #b3b3b3;
-  width: 25rem;
+  width: 30rem;
   height: 25rem;
   position: absolute;
   top: 12.5rem;
-  left: 17.5rem;
+  left: 15rem;
   border: 1rem solid #404040;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +133,7 @@ main .genius__controles .agrupar__elementos p {
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2rem;
-  margin: 1rem;
+  margin: .4rem;
   color: #404040;
 }
 
@@ -158,11 +158,15 @@ main .genius__controles .genius__contador {
   height: 3rem;
   width: 4rem;
   text-align: center;
-  color: #ECE7EE;
+  color: #500305;
   line-height: 3rem;
   font-size: 1.8rem;
   background-color: #1b0102;
   border-radius: 15%;
   border: #a52a2a solid .3rem;
+}
+
+main .genius__controles .genius__contador--on {
+  color: #ff0000;
 }
 /*# sourceMappingURL=style.css.map */
